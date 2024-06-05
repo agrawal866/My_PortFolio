@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj-PortFoliyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Anuj's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html" target="'_blank">About</a></li>
+                    <li><a href="project.html " target="_blanlk">Projects</a></li>
+                    <li><a href="hobby.html" target="_blank">Hobby</a></li>
+                    <li><a href="contact_me.html" target="_blank">Contact Me</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, Myself <span class="purple">Anuj</span> and
+                <div>I am a</div>
+                    <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg1.png">
+            </div>
+        </section>
+        <hr>
+        
+
+        <section class="SecondSection">
+            <span class="grey">What i Have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+            <div class="box1"><h3>Volunteer at Admission Cell | Management</h3>
+                Coordinated the digital completion of Admission forms for more than 250 newly admitted students during the campus admission process at MBM University, Jodhpur, ensuring efficient management of online documentation.</div>
+                <br>
+                <br>
+                <div class="box1"><h3>Volunteer at MBM University, Jodhpur, TECHKRITI | Marketing Team Volunteer</h3>
+                Volunteer in marketing team in our college Technical fest TECHKRITI'23 , for marketing our event so more people join and 
+                takes an opportunity</div>
+                </div>
+        </section>
+    </main>
+    <section id="contact-container">
+        <h1 class="h-primrary center" style="color:black">Contact Us</h1>
+        <div id="contact-box">
+            <form onsubmit="data()" action="submit.html">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name";
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email";
+                </div>
+                <div class="form-group">
+                    <label for="Mobile">Mobile No:</label>
+                    <input type="phone"  id="mobile" placeholder="Enter Your Mobile No";
+                </div>
+                <div class="form-group">
+                    <label for="messaage">Messaage:</label>
+                    <textarea  id="messaage" cols="20" rows="10"></textarea>
+                </div>
+                <input type="submit"  value="Submit Your Data" id="submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; myPortfoli.com. All right reserved!
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'AI Engineer','Sketch Artist'],
+          typeSpeed: 50,
+        })
+    </script>
+    <script>
+
+        function data(){
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("email").value;
+            var c=document.getElementById("mobile").value;
+            var d=document.getElementById("message").value;
+            
+            if(a=="" || b=="" || c=="" || d==""){
+                alert("All Fields are mendatory")
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+      </script>
+    
+</body>
+</html>
